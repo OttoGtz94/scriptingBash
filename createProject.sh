@@ -5,7 +5,7 @@ echo "====================createProject===================="
 echo "=======================================by:OttoGtz===="
 echo "====================================================="
 
-projects="Basico React ECMAS6 Salir"
+projects="Basico React npm Salir"
 
 function basico {
     echo "Dame el nombre del proyecto:"
@@ -23,10 +23,16 @@ function basico {
 }
 
 function react {
-    echo "Proyecto de React"
+    echo "Dame el nombre del proyecto de React"
+    read name_project
+    cd ~/Programming/appsReact/
+    npx create-react-app "$name_project"
+    echo "Se creo el proyecto $name_project"
+    code ~/Programming/appsReact/"$name_project"
+    exit
 }
 
-function ecmas6 {
+function npm {
     echo "Proyecto de ECMAS6"
 }
 
@@ -37,7 +43,7 @@ do
         basico
     elif [ $project = "React" ]; then
         react
-    elif [ $project = "ECMAS6" ]; then
+    elif [ $project = "npm" ]; then
         ecmas6
     elif [ $project = "Salir" ]; then
         echo "bye"

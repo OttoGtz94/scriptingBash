@@ -37,6 +37,19 @@ Para abrir en **vsCode** en la línea:
 Se modificaría a
 > code ~/projects/"$name_project"
 
+### React
+Crea un proyecto de React con el nombre que se le indique y abre **vsCode** con el proyecto.
+ ### Configuración
+Cambiar las rutas donde se creara
+> cd ~/Programming/appsReact/
+
+Si tenemos una carpeta llamada **projects** en nuestra carpeta de usuario y queremos que el proyecto se creé dentro de ella ponemos
+> cd ~/projects/
+
+Al igual se modifica la ruta para abrir en **vsCode**
+> code ~/projects/"$name_project"
+
+
 
 
 
