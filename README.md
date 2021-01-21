@@ -1,7 +1,20 @@
 # Scripting Bash
 Scripts creados para automatizar mi entorno de trabajo en Linux.
 
-## createProject
+Para crear un alias para cada script y correrlo desde la terminal, abrimos con nuestro editor de texto *.bashrc*
+> vim ~/.bashrc
+
+Creamos nuestro alias
+> alias create-project="bash ~/ruta/del/script/createProject.sh"
+
+Guardamos, salimos y escribimos
+> source .bashrc
+
+Ahora ya podemos ejecutar nuestro alias desde la terminal ubicados en cualquier carpeta.
+> **create-project**
+
+
+## Script createProject
 Crea 3 tipos de proyectos, *basico*, *react* y *ECMAs6* con sus respectivos ficheros.
 
 ### Basico
