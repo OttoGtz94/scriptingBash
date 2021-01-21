@@ -39,7 +39,7 @@ Se modificaría a
 
 ### React
 Crea un proyecto de React con el nombre que se le indique y abre **vsCode** con el proyecto.
- ### Configuración
+#### Configuración
 Cambiar las rutas donde se creara
 > cd ~/Programming/appsReact/
 
@@ -48,6 +48,17 @@ Si tenemos una carpeta llamada **projects** en nuestra carpeta de usuario y quer
 
 Al igual se modifica la ruta para abrir en **vsCode**
 > code ~/projects/"$name_project"
+
+### npm
+Crea e inicializa el proyecto en **npm** y abre el proyecto en vsCode
+#### Configuración
+Cambiar la ruta de **mkdir**, **cd** y **code**
+> mkdir ~/Programming/"$name_project"
+
+> cd ~/Programming/"$name_project"
+
+> code ~/Programming/"name_project"
+
 
 
 
