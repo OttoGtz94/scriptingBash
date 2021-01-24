@@ -1,11 +1,11 @@
 #!/bin/bash
 clear
 
-echo "====================================================="
-echo "====================================================="
-echo "=====================print-me========================"
-echo "=======================================by:OttoGtz===="
-echo "====================================================="
+echo -e "\e[31m=====================================================\e[0m"
+echo -e "\e[31m=====================================================\e[0m"
+echo -e "\e[31m======================\e[0m\e[33mprint-me\e[0m\e[31m=======================\e[0m"
+echo -e "\e[31m=======================================\e[36mby:OttoGtz\e[0m\e[31m====\e[0m"
+echo -e "\e[31m=====================================================\e[0m"
 echo ""
 echo ""
 echo ""
@@ -35,7 +35,7 @@ function cancelarImpresion {
 }
 
 function menu {
-    echo "Selecciona una opcion:"
+    echo -e "\e[1;32m==>\e[0m   \e[32mSelecciona una opcion: (ej. 1)\e[0m\e[36m"
     select option in $options;
     do
         #if [ $option = "Imprimir" ]; then
@@ -50,7 +50,7 @@ function menu {
             echo "Adiós"
             exit
         else
-            echo "Opción invalida"
+            echo -e "\e[1;31mOpcion invalida\e[0m"
             exit
         fi
     done
@@ -63,9 +63,9 @@ elif [[ -s "$1" && -z "$2" || "$2" -eq 1 ]]; then
 elif [[ -s "$1" && ! -z "$2" && "$2" -ge 2 && "$2" -le 30 ]]; then
     imprimirMasDeUna $1 $2
 elif [ ! -s "$1" ]; then
-    echo "El archivo esta vacio"
+    echo -e "\e[1;31mEl archivo esta vacio\e[0m"
     exit
 else
-    echo "Esto no es una ruta"
+    echo -e "\e[1;31mEsto no es una ruta\e[0m"
     exit
 fi

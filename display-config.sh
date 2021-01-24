@@ -1,10 +1,10 @@
 #!/bin/bash
 
-echo "====================================================="
-echo "====================================================="
-echo "==================display-config====================="
-echo "=======================================by:OttoGtz===="
-echo "====================================================="
+echo -e "\e[31m=====================================================\e[0m"
+echo -e "\e[31m=====================================================\e[0m"
+echo -e "\e[31m====================\e[0m\e[33mdisplayConfig\e[0m\e[31m====================\e[0m"
+echo -e "\e[31m=======================================\e[36mby:OttoGtz\e[0m\e[31m====\e[0m"
+echo -e "\e[31m=====================================================\e[0m"
 echo ""
 echo ""
 
@@ -49,7 +49,7 @@ function addMonitor {
         monitorConfig $name_monitor_primary $resolution_primary_monitor $name_monitor_secondary $resolution_secondary_monitor --below
         exit
     else 
-        echo "Posición invalida"
+        echo -e "\e[1;31mPosición invalida\e[0m"
         addMonitor
     fi
 }
@@ -64,7 +64,7 @@ function oneMonitor {
 }
 
 function menu {
-    echo "Selecciona una opcion:"
+    echo -e "\e[1;32m==>\e[0m   \e[32mSelecciona una opcion: (ej. 1)\e[0m\e[36m"
     select option in $options;
     do
         if [ $option = "ListarMonitores" ]; then
@@ -80,7 +80,7 @@ function menu {
             echo "Adiós"
             exit
         else
-            echo "Opción invalida"
+            echo -e "\e[1;31mOpcion invalida\e[0m"
             clear
             menu
         fi
