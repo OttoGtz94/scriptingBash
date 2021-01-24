@@ -221,3 +221,7 @@ Ahora cada vez que escribamos _display-config_ en nuestra terminal se ejecutara 
 ### Diagrama
 
 ![Diagrama de display-config](images/display-config/display-config-diagram.jpg)
+
+## Screen de scripts
+
+![Screen de scripts](images/screenScripts.jpg)
